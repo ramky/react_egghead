@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>First Component</title>
+    <meta charset="UTF-8">
+    <script src="javascripts/react.js"></script>
+    <script src="javascripts/jsxtransformer.js"></script>
+  </head>
+  <body>
+    <script type="text/jsx">
+      /*** @jsx React.DOM */
+      var APP = React.createClass({
+        render: function() {
+          return (
+            <h1>Hello World</h1>
+          )
+        }
+      });
+      React.renderComponent(<APP />, document.body)
+    </script>
+  </body>
+</html>
+
